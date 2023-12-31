@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+<title>高三(5)班</title>
+<link rel="canonical" href="./">
+
+<link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E🐼%3C/text%3E%3C/svg%3E">
+<style>
+      
+      
+@import url('https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/lxgwwenkaiscreen.css');
+:root {
+    --width: 720px;
+    --font-main: "LXGW WenKai Screen", sans-serif;
+    --font-secondary: "LXGW WenKai Screen", sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color:  #8b6fcb;
+    --code-background-color: #f2f2f2;
+    --code-color: #222;
+    --blockquote-color: #222;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #01242e;
+        --heading-color: #eee;
+        --text-color: #ddd;
+        --link-color: #8cc2dd;
+        --visited-color:  #8b6fcb;
+        --code-background-color: #000;
+        --code-color: #ddd;
+        --blockquote-color: #ccc;
+    }
+}
+body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color)
+    scroll-behavior: smooth;
+    min-height: 100%;
+    min-height: 100%;
+}
+
+h1 {
+  color: black;
+}
+
+h2, h3, h4, h5, h6 {
+	line-height: 1.5em;
+	margin-top: 2.2em;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 1.4em;
+	margin: 40px 10px 20px 0;
+	padding-left: 9px;
+	border-left: 6px solid #3273dc;
+	font-weight: 700;
+	line-height: 1.4;
+}
+h3 {
+	font-weight: 700;
+	font-size: 1.2em;
+	line-height: 1.4;
+	margin: 10px 0 5px;
+	padding-top: 10px;
+}
+h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	line-height: 1.4;
+	margin: 10px 0 5px;
+	padding-top: 10px
+}
+h5, h6 {
+	font-size: .9em;
+}
+h5 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h6 {
+	font-weight: normal;
+	color: #AAA;
+}
+
+a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline; 
+}
+.custom-button {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+nav a {
+  margin-right: 8px;
+  text-decoration: underline
+}
+
+strong, b {
+    color: var(--heading-color);
+}
+button {
+    margin: 0;
+    cursor: pointer;
+}
+main {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+}
+
+/* 表格边框 */
+table {
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px black solid;
+  padding: 10px 30px;
+}
+
+table th {
+  background-color: white;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed;
+}
+img {
+  max-width: 100%;
+  background-color: var(
+    --background-secondary
+  );
+}
+code {
+    font-family: monospace;
+    padding: 2px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+}
+
+blockquote {
+    color: #666666;
+    margin: 0;
+    padding-left: 3em;
+    border-left: 0.5em #EEE solid;
+}
+  
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+.title:hover {
+    text-decoration: none;
+}
+.title h1 {
+    font-size: 1.5em;
+}
+.inline {
+    width: auto !important;
+}
+.highlight, .code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+}
+
+/* blog post list */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+ul.blog-posts li {
+    display: flex;
+}
+ul.blog-posts li span {
+    flex: 0 0 130px;
+}
+ul.blog-posts li a:visited {
+    color: var(--visited-color);
+}
+
+
+.heimu, .heimu a, a .heimu, .heimu a.new {
+    background-color: #252525;
+    color: #252525;
+    text-shadow: none;
+}
+.heimu:hover, .heimu:active,
+.heimu:hover .heimu, .heimu:active .heimu {
+    color: white !important;
+}
+.heimu:hover a, a:hover .heimu,
+.heimu:active a, a:active .heimu {
+    color: lightblue !important;
+}
+.heimu:hover .new, .heimu .new:hover, .new:hover .heimu,
+.heimu:active .new, .heimu .new:active, .new:active .heimu {
+    color: #BA0000 !important;
+}
+
+.wrap {
+/* 可无需设置高度，靠图片高度 或者 文字的上下padding撑开高度 */
+    border: 1px solid;
+    width: 600px;
+    text-align: center;
+}
+.wrap span{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 0; /* 撑开高度 */
+}
+.wrap img{
+    width: 10px;
+    height: auto;
+    vertical-align: middle;
+}
+video {
+  width: 100%;
+  height: auto;
+}  
+.right-align {
+  text-align: right;
+}  
+    .upload-button {
+        background-color: #4CAF50; /* 设置背景颜色 */
+        color: white; /* 设置文字颜色 */
+        padding: 10px 20px; /* 设置内边距 */
+        border: none; /* 移除边框 */
+        border-radius: 4px; /* 设置圆角 */
+        cursor: pointer; /* 设置鼠标悬停样式 */
+        font-size: 16px; /* 设置字体大小 */
+    }  
+    
+        .file-input {
+        display: inline-block; /* 将输入框显示为行内元素 */
+        padding: 10px; /* 设置内边距 */
+        background-color: #f1f1f1; /* 设置背景颜色 */
+        border: none; /* 移除边框 */
+        border-radius: 4px; /* 设置圆角 */
+    }
+
+    .file-input-label {
+        cursor: pointer; /* 设置鼠标悬停样式为手型 */
+        font-size: 16px; /* 设置字体大小 */
+        color: #333; /* 设置文字颜色 */
+    }
+  </style>
+</head>
+<body class="home">
+<header>
+<a class="title" href="/">
+<h1>
+･✦ Lyrique ✦･
+</h1>
+</a>
+<nav>
+<p><a href="/">Home</a>
+<a href="https://wtuce.com/u/Lyrique">Photos</a>
+<a href="./contact.html/">Comments</a></p>
+</nav>
+</header>
+<main>
+<hr/>
+<h2 id="hi-7-woo-7">Hi! 亲爱的同学们 ੭ ᐕ)੭ </h2>
+<p>是一个展示班级照片的网页</p>
+<p>友情提醒：仅支持上传图片格式为.jpg和视频格式为.mp4，且<strong><u>都不能超过5MB</u></strong>，视频在15秒左右的，因为服务器储存特别小，1毛钱买的服务器，建议不要点到主页</p>
+<div class="right-align">
+  <p>2023-12-31</p>
+</div>
+<hr/>
+
+</main>
+
+        <h1>文件上传</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+<input type="file" id="fileToUpload" class="file-input" accept=".jpg, .mp4" required>
+    <button type="submit" class="upload-button">上传</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var fileInput = document.getElementById('fileToUpload');
+            var file = fileInput.files[0];
+            var fileType = file.type;
+            var fileName = file.name;
+            var fileSize = file.size / 1024 / 1024; // 文件大小，单位为MB
+
+            if (fileType === 'image/jpeg' || fileType === 'video/mp4') {
+                // 检查文件大小是否超过5MB
+                if (fileSize > 5) {
+                    document.getElementById('result').innerHTML = '文件大小超过限制，请上传大小不超过5MB的文件';
+                    return;
+                }
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'upload.php', true);
+                document.getElementById('result').innerHTML = '正在上传...';
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        document.getElementById('result').innerHTML = xhr.responseText;
+                        window.location.reload(); 
+                    } else {
+                        document.getElementById('result').innerHTML = '上传失败，请稍后再试。';
+                    }
+                };
+
+                var formData = new FormData();
+                formData.append('fileToUpload', file, fileName);
+
+                xhr.send(formData);
+            } else {
+                document.getElementById('result').innerHTML = '仅支持上传图片格式为.jpg和视频格式为.mp4';
+            }
+        });
+
+    </script>
+        <h1>Images</h1>
+    <ul id="imageList"></ul>
+    <h1>Videos</h1>
+    <ul id="videoList"></ul>
+
+    <script>
+        function loadFiles(listId, prefix) {
+            var list = document.getElementById(listId);
+            var i = 1;
+
+            while (true) {
+                var fileName = prefix + i + '.' + (prefix === 'p' ? 'jpg' : 'mp4');
+                var xhr = new XMLHttpRequest();
+                xhr.open('HEAD', '/upload/' + fileName, false);
+                xhr.send();
+
+                if (xhr.status === 404) {
+                    break;
+                }
+
+                var li = document.createElement('li');
+                if (prefix === 'p') {
+                    var img = document.createElement('img');
+                    img.src = '/upload/' + fileName;
+                    img.alt = 'Image ' + fileName;
+                    li.appendChild(img);
+                } else {
+                    var video = document.createElement('video');
+                    video.src = '/upload/' + fileName;
+                    video.controls = true;
+                    li.appendChild(video);
+                }
+                list.appendChild(li);
+
+                i++;
+            }
+        }
+
+        window.onload = function() {
+            loadFiles('imageList', 'p');
+            loadFiles('videoList', 'v');
+        };
+    </script>
+<footer style="padding:25px 0;">
+<span>
+Made by <a href="./">ʕ•ᴥ•ʔ Lyrique</a>
+</span>
+</footer>
+    
+</body>
+</html>
